@@ -1,0 +1,16 @@
+{
+  "name": "@ponk-elysium/miner",
+  "version": "0.1.0",
+  "description": "Browser SHA-256 proof-of-work miner for HYPE on Elysium. WebGPU with a CPU fallback.",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "files": ["src"],
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "repository": "github:ponk-elysium/ponk-miner",
+  "homepage": "https://elzponk.fun",
+  "keywords": ["elysium", "hype", "webgpu", "sha256", "proof-of-work", "mining"]
+}
