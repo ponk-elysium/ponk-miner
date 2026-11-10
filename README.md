@@ -28,6 +28,8 @@ valid   = first 32 bits of hash < target
 2. **Search.** The GPU hashes nonces in workgroups of 64. The 44-byte attempt fits one SHA-256 block, so the shader only needs the first output word.
 3. **Verify.** The server re-hashes the winning nonce. A proof is bound to its wallet and its round seed, so it can't be replayed elsewhere.
 
+Full byte layout and target table: [docs/protocol.md](docs/protocol.md).
+
 Base difficulty is 27 bits (`target = 32`). Holding elPONK raises the target: `boost = 1 + % of supply held`, capped at 101×. Paid upgrades (SPARK 2×, TURBO 4×, OVERDRIVE 8×) multiply it again.
 
 ## Use
