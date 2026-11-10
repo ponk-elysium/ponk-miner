@@ -55,6 +55,15 @@ miner.stop();
 | `src/gpu.ts` | GPU detection and chip weight |
 | `src/chain.ts` | Elysium and elPONK constants |
 
+## Try it
+
+```bash
+npm run example -- 0xYourWallet 20   # mine one 20-bit proof on the CPU and verify it
+npm run bench                        # CPU hashrate of the TypeScript SHA-256
+```
+
+The CPU path does about 300k H/s on an Apple M-series core. The WebGPU shader is what makes the 27-bit base target practical in a browser.
+
 ## Tests
 
 ```bash
